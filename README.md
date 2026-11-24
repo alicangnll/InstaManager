@@ -167,6 +167,8 @@ Select **Option 1** from the menu. You can choose between two login methods:
 
 Your session is automatically saved to `session.json` so you stay logged in between runs! The file is written with **owner-only permissions (`0600`)** and excluded from git via `.gitignore` — treat it like your password.
 
+<img width="2932" height="1248" alt="image" src="https://github.com/user-attachments/assets/80a1e6ed-8c48-4298-b748-c5cfdf3646d8" />
+
 ---
 
 ### Step 6: Account-Wide Scam Cleanup (Option 7 - RECOMMENDED FOR HACKED ACCOUNTS)

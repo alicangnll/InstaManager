@@ -633,10 +633,21 @@ def export_chat_to_html(thread_info: dict, messages: List[dict], output_file: st
         f.write(html_content)
 
 
+def _restrict_file_permissions(path: str):
+    """Restrict a file to owner-only access (0o600). Best effort: silently
+    skips platforms/files where permission changes are unsupported."""
+    try:
+        os.chmod(path, 0o600)
+    except Exception:
+        pass
+
+
 def load_session(client: Client, session_file: str) -> bool:
     """Load session with app version override to prevent out-of-date error"""
     if not os.path.exists(session_file):
         return False
+    # Harden pre-existing session files that may have been created 0644
+    _restrict_file_permissions(session_file)
     try:
         try:
             client.load_settings(session_file, override_app_version=True)
@@ -659,9 +670,10 @@ def load_session(client: Client, session_file: str) -> bool:
 
 
 def save_session(client: Client, session_file: str) -> bool:
-    """Save session to file"""
+    """Save session to file with owner-only permissions (contains full-access cookies)"""
     try:
         client.dump_settings(session_file)
+        _restrict_file_permissions(session_file)
         return True
     except Exception:
         return False

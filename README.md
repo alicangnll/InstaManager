@@ -1,5 +1,7 @@
 # Instagram DM Tool - Bulk Unsend & Chat Export
 
+**English** | [Türkçe](README_TR.md)
+
 A Python tool using [instagrapi](https://github.com/subzeroid/instagrapi) to:
 - Log in to Instagram with session persistence (supports Username/Password, 2FA, and Browser Session ID)
 - **Account-Wide Cleanup:** Scan across **ALL conversations in your inbox** and bulk unsend scam links, photos, and messages with 1 click
@@ -163,10 +165,7 @@ Select **Option 1** from the menu. You can choose between two login methods:
 4. Double-click its **Value** and copy the entire string.
 5. In the tool, select **Option 1 -> Method 2**, paste your `sessionid`, and press Enter.
 
-Your session is automatically saved to `session.json` so you stay logged in between runs!
-
-<img width="2932" height="1248" alt="image" src="https://github.com/user-attachments/assets/277bcb59-1c82-43ec-a6cb-c72f35bbd950" />
-
+Your session is automatically saved to `session.json` so you stay logged in between runs! The file is written with **owner-only permissions (`0600`)** and excluded from git via `.gitignore` — treat it like your password.
 
 ---
 

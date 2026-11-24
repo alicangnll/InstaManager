@@ -167,7 +167,7 @@ Menüden **Seçenek 1**'i seçin. İki giriş yöntemi arasından seçim yapabil
 4. **Değerine** çift tıklayın ve tüm diziyi kopyalayın.
 5. Araçta **Seçenek 1 -> Yöntem 2**'yi seçin, `sessionid` değerinizi yapıştırın ve Enter'a basın.
 
-Oturumunuz otomatik olarak `session.json` dosyasına kaydedilir, böylece çalıştırmalar arasında giriş yapmış kalırsınız!
+Oturumunuz otomatik olarak `session.json` dosyasına kaydedilir, böylece çalıştırmalar arasında giriş yapmış kalırsınız! Dosya **sadece sahip erişimine izin veren izinlerle (`0600`)** yazılır ve `.gitignore` sayesinde git'e girmez — bu dosyaya şifreniz gibi davranın.
 
 ---
 

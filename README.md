@@ -165,6 +165,9 @@ Select **Option 1** from the menu. You can choose between two login methods:
 
 Your session is automatically saved to `session.json` so you stay logged in between runs!
 
+<img width="2932" height="1248" alt="image" src="https://github.com/user-attachments/assets/277bcb59-1c82-43ec-a6cb-c72f35bbd950" />
+
+
 ---
 
 ### Step 6: Account-Wide Scam Cleanup (Option 7 - RECOMMENDED FOR HACKED ACCOUNTS)

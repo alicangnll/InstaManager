@@ -169,6 +169,9 @@ Menüden **Seçenek 1**'i seçin. İki giriş yöntemi arasından seçim yapabil
 
 Oturumunuz otomatik olarak `session.json` dosyasına kaydedilir, böylece çalıştırmalar arasında giriş yapmış kalırsınız! Dosya **sadece sahip erişimine izin veren izinlerle (`0600`)** yazılır ve `.gitignore` sayesinde git'e girmez — bu dosyaya şifreniz gibi davranın.
 
+<img width="2932" height="1248" alt="image" src="https://github.com/user-attachments/assets/803c6834-c354-43aa-b9ca-0bbd3208847b" />
+
+
 ---
 
 ### Adım 6: Hesap Geneli Dolandırıcılık Temizliği (Seçenek 7 - HACK'LENEN HESAPLAR İÇİN ÖNERİLEN)
